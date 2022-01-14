@@ -1,13 +1,30 @@
-h1{
+
+body{ 
+    background-color: white;
+    }
+a{ 
+    font-family: 'East Sea Dokdo', cursive;
     color:red;
     background-color: yellow;
-   }
-body{
-    background-color: black;
 }
-a{
-    color:red;
+h1 span:nth-child(1){
+    font-family: 'Gamja Flower', cursive;
+    color: red;
     background-color: yellow;
+}
+h1 span:nth-child(2){
+    font-weight: normal;
+    font-size: 31px;
+    color: blue;
+    background-color: green;
+}
+h1 span:nth-child(3){
+    font-family: 'Gamja Flower', cursive;
+    color: yellow;
+    background-color: blueviolet;
+}
+h1 span:nth-child(4){
+    color: red;
 }
 span{
     color: black;
