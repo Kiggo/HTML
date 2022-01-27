@@ -1,3 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro&display=swap');
+
+
+body {
+   
+    
+}
+
+.Google h1 {
+    font-size: 120px;
+    letter-spacing: -13px;
+    text-align: center;
+    /* font-family: 'Montserrat', sans-serif; */
+     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+
+}
+
+.blue {
+    color: #4285f4;
+}
+
+.red {
+    color: #ea4335;
+}
+
+.yellow {
+    color: #fcc830;
+}
+
+.green {
+    color: #34a853;
+}
+
+.e_rotate {display: inline-block; transform: rotate(-15deg);}
+
 a {
     text-decoration: none;
 }
@@ -44,7 +80,7 @@ a {
     width: 100px;
 }
 
-.box:hover{
+.box:hover {
     background-color: rgba(245, 245, 245, 0.933);
     transition: 1s;
 }
