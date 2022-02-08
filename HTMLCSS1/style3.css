@@ -1,0 +1,54 @@
+.bold {
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.box {
+    background-color: rgb(241, 241, 241);
+    padding: 10px;
+    margin: 20px;
+    transition: .3s;
+    position: relative;
+}
+.box span {
+    position: relative;
+    z-index: 5;
+}
+.box span::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    z-index: 5;
+    transition: .3s;
+}
+.box span:hover::after {
+   
+    width: 100%;
+}
+/* .box::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 181, 181);
+    transition: 1s;
+}
+
+.box:hover::after {
+    width: 100%;
+    z-index: -1;
+} */
+
+/* .box:hover {
+    background-color: rgb(255, 181, 181);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+} */
