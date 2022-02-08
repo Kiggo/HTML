@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bootstrap 사용해보기</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_10.css" />
+</head>
+
+<body>
+    <div class="box">
+
+        좋아하는 동물 고르기<br>
+        <br>
+        <button type="button" class="btn btn-outline-primary" onclick="s1()">고양이</button>
+        <button type="button" class="btn btn-outline-primary" onclick="s2()">강아지</button>
+        <button type="button" class="btn btn-outline-primary" onclick="s3()">호랑이</button>
+
+        <p id="test"></p>
+        <script>
+            function s1() {
+                document.getElementById("test").innerHTML = "\"고양이\"를 골랐습니다.";
+            }
+
+            function s2() {
+                document.getElementById("test").innerHTML = "\"강아지\"를 골랐습니다.";
+            }
+
+            function s3() {
+                document.getElementById("test").innerHTML = "\"호랑이\"를 골랐습니다.";
+            }
+        </script>
+        <div class="card" style="width: 18rem;">
+            <img src="https://mblogthumb-phinf.pstatic.net/MjAxNzA1MjNfNjAg/MDAxNDk1NTE1MTg5ODc4.f4zidWk3rHazZObqn0Nqxl_Daka90A1MnY59eYuB7ykg.m_D2BfI6FiGRR8DM132F0Sh6l1m3wML8EI9KVTL0Aukg.PNG.kar7793/2017-05-23_13%3B47%3B41.PNG?type=w800"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">짤랑이</h5>
+                <p class="card-text">짤랑이의 공부방 입니다.</p>
+                <a href="https://github.com/Kiggo" class="btn btn-primary">구경하러가기</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
