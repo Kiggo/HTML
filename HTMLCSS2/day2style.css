@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+@font-face {
+    font-family: 'SUIT-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+div {
+
+    border: solid 1px gray;
+    width: 410px;
+    height: 170px;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+h2 {
+    font-family: 'SUIT-Medium'
+}
