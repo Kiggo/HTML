@@ -1,0 +1,95 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.menu {
+    border: 1px solid gainsboro;
+    margin-top: 50px;
+    padding: 10px 30px;
+    width: 110px;
+}
+
+#top {
+    background-color: #008275;
+    color: white;
+    padding: 20px;
+    font-size: 20pt;
+    font-weight: bold;
+
+}
+
+table {
+
+    border-collapse: collapse;
+
+}
+
+th {
+    border: solid 2px gainsboro;
+    width: 90px;
+    padding: 10px;
+}
+
+td {
+    border: solid 2px gainsboro;
+    padding: 10px;
+
+}
+
+.wrapper {
+    padding: 80px;
+}
+
+.profile_wr {
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+}
+
+.profile {
+    text-align: center;
+    background-color: gainsboro;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.profile_img {
+    border-left: solid 2px gainsboro;
+    border-right: solid 2px gainsboro;
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+
+}
+ .profile_img img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+
+.flag {
+    text-align: right;
+    width: 50px;
+
+}
+
+p {
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 40pt;
+}
+
+h2 {
+    padding: 15px 0;
+    font-size: 30pt;
+}
+
+li {
+    padding-top: 10px;
+    list-style: inside;
+}
+
+a {
+    text-decoration: none;
+    color: #0270dd;
+}
