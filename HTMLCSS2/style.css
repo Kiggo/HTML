@@ -20,7 +20,8 @@ body {
     border: 1px solid #738186;
 
 }
-.bookdot{
+
+.bookdot {
     border: 2px dashed white;
     position: absolute;
     width: 925px;
@@ -29,12 +30,83 @@ body {
     left: 15px;
     border-radius: 9px;
 }
-.page{
-    background-color: white;
+
+.page {
+    background-color: #eeeeee;
     position: absolute;
     width: 900px;
     height: 604px;
     top: 10px;
     left: 13px;
     border-radius: 9px;
+    display: flex;
+
+
+
+}
+
+.leftbox {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 15px 25px 25px;
+    text-align: center;
+
+}
+
+.leftbox1 {
+    flex: 0.1;
+    background-color: #eeeeee;
+    font-size: 16px;
+    line-height: 2;
+
+}
+
+.leftbox2 {
+    flex: 1.5;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background: #fff;
+}
+
+.centerbox {
+    flex: 1;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+
+
+}
+
+.centerbox1 {
+    flex: 0.1;
+    display: flex;
+    background-color: #eeeeee;
+
+}
+
+.centerbox2 {
+    flex: 1;
+
+}
+
+.centerbox3 {
+    flex: 1;
+}
+
+.centerbox4 {
+    flex: 1.5;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background: #fff;
+}
+
+.rightbox {
+    flex: 0.2;
+    border: solid 1px black;
+}
+
+span {
+    color: red;
 }
