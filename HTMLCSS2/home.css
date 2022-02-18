@@ -1,82 +1,3 @@
-.leftbox {
-    flex: 0.4;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 15px 25px 25px;
-    text-align: center;
-
-}
-
-.leftbox1 {
-    flex: 0.1;
-    background-color: #eeeeee;
-    font-size: 16px;
-    line-height: 2;
-    font-family: 'NeoDunggeunmo';
-}
-
-.leftbox2 {
-    flex: 1.5;
-    border: 1px solid #ddd;
-    border-radius: 9px;
-    background: #fff;
-    flex-direction: column;
-    display: flex;
-}
-
-.leftbox2_1 {
-    flex: 0.7;
-    margin-top: 20px;
-
-}
-
-.leftbox2_2 {
-    flex: 1;
-    font-family: 'KyoboHandwriting2020A';
-    font-size: 18px;
-    
-
-}
-
-.centerbox {
-    flex: 1;
-    background-color: #eee;
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0;
-
-
-
-
-}
-
-.centerbox1 {
-    flex: 0.1;
-    display: flex;
-    background-color: #eeeeee;
-
-
-}
-
-.centerbox2 {
-    flex: 1;
-    font-family: 'KyoboHandwriting2020A';
-}
-
-.centerbox3 {
-    flex: 1;
-    font-family: 'KyoboHandwriting2020A';
-    text-align: right;
-}
-
-.centerbox4 {
-    flex: 1.5;
-    border: 1px solid #ddd;
-    border-radius: 9px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-}
 
 .centerbox4_1 {
     flex: 0.5;
@@ -106,6 +27,7 @@
     flex: 1;
     text-align: center;
     background-color: #72a1bc;
+    margin-top: 9px;
 
 }
 
@@ -122,6 +44,7 @@
     flex-direction: row;
     font-family: 'Noto Sans KR', sans-serif;
 
+
 }
 
 .centerbox4_5 {
@@ -136,18 +59,7 @@
 
 }
 
-.rightbox {
-    flex: 0.2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-bottom: 300px;
-    margin-top: 70px;
-}
 
-.red {
-    color: red;
-}
 
 .backred {
     background: #ff7979;
@@ -159,9 +71,7 @@
     color: #fff;
 }
 
-.lefttopbox span {
-    vertical-align: middle;
-}
+
 
 .icon {
     width: 50px;
@@ -176,29 +86,12 @@
 
 .update_txt {
     font-size: 16px;
-}
-
-.profile {
-    width: 170px;
-    height: 170px;
-    margin: 10px auto;
-    background: rgb(214, 234, 241);
 
 }
 
-.profile img {
-    max-width: 100%;
-}
 
 .centerbox4_6 {
     font-size: 0;
-}
-
-.righttopbox {
-    display: inline-block;
-    width: 50%;
-    font-size: 16px;
-    border-bottom: 1px dotted #333;
 }
 
 .up_num {
@@ -208,37 +101,20 @@
     font-weight: bold;
 }
 
-.rightmenu {
-    background-color: #3b87ab;
-    border-radius: 0 8px 8px 0;
-    padding: 12px 8px;
-    border: 1px solid gray;
-    border-left: 0;
-    width: 70px;
-    font-size: 16px;
-    letter-spacing: -1px;
-    font-family: 'KyoboHandwriting2020A';
-    transition: .5s;
-}
-.rightmenu:hover {
-    background-color: #617dc1;
-    
-}
-.rightbox a {
-    text-decoration: none;
-    color: #fff;
-}
 
-.centerbox4_2_2 img{
+.centerbox4_2_2 img {
     position: relative;
     top: 15px;
 }
 
-.sel_wr {
-    padding-bottom: 30px
+.lefttopbox span {
+    vertical-align: middle;
+    margin: 1px 2px;
 }
 
-.sel_wr p {
-    margin: 0;
-    margin-bottom: 5px;
+.righttopbox {
+    display: inline-block;
+    width: 50%;
+    font-size: 16px;
+    border-bottom: 1px dotted #333;
 }
