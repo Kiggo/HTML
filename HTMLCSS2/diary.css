@@ -1,0 +1,49 @@
+.today {
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 480px;
+    padding: 10px;
+    margin: 16px 0 0 16px;
+    display: flex;
+    font-family: 'NeoDunggeunmo';
+
+}
+
+.lefttop {
+    flex: 0.2;
+    color: #6d9dce;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.righttop {
+    flex: 1;
+    color: #ccc;
+    line-height: 20px;
+    flex-wrap: wrap;
+    display: inline-flex;
+
+}
+.item{
+  width: 25px;
+  align-items: center;
+    
+  
+}
+.sat{
+    color: blue;
+}
+.sun{
+    color: red;
+}
+
+.memo {
+    border: 1px solid #ccc;
+    width: 480px;
+    height: 380px;
+    margin: 16px;
+    overflow: scroll;
+
+
+}
