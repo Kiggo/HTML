@@ -6,8 +6,8 @@
     <title>2021 MINI HOMEPAGE</title>
     <link rel="stylesheet" href="font.css">
     <link rel="stylesheet" href="layout.css" />
-    <link rel="stylesheet" href="gallery.css" />
     <link rel="stylesheet" href="diary.css">
+    <script src="https://kit.fontawesome.com/3dd0150dc2.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,12 +20,13 @@
                     <div class="leftbox1">TODAY <span class="red">28</span> | TOTAL 232</div>
                     <div class="leftbox2">
                         <div class="leftbox2_1">
-                            <p class="profile"><img src="../../짤랑이/KakaoTalk_20220211_000312934_06.gif"></p>
+                            <p class="profile"><img src="../짤랑이/KakaoTalk_20220211_000312934_06.gif"></p>
                         </div>
                         <div class="leftbox2_2">짤랑이<br>도킨짱(ドキンちゃん)</div>
                         <div class="sel_wr">
                             <p>짤랑이(♀)</p>
-                            <select name="파도타기" id="">파도타기
+                            <select name="파도타기" id="">
+                                <option value="none" hidden>파도타기</option>
                                 <option value="코뮤니티">코뮤니티로 가기</option>
                                 <option value="인스타그램">인스타그램으로 가기</option>
                             </select>
@@ -72,7 +73,52 @@
                                 <div class="item">28</div>
                             </div>
                         </div>
-                        <div class="memo"></div>
+                        <div class="memo">
+                            <div class="memo1">
+                                <div class="memotop">2022.02.21 월 23:30</div>
+                                <div class="memobottom">잡채밥 만들어준다는 사람이<br>
+                                    쿨쿨 자고있다 역시나 내가 만들어야 하나 보다<br>
+                                    예상했던 전개!!<Br>
+                                    <br>
+
+
+                                    오늘도 재밌었던 하루를 마무리 하려한다 <br>
+                                    내일은 조금더 발전한 내가 되기를
+                                </div>
+                            </div>
+                            <div class="memo1">
+                                <div class="memotop">2022.02.20 월 19:45</div>
+                                <div class="memobottom">외장하드로 뭘좀 해보려다가<br>
+                                    데이터가 전부 사라져서 눈물이 난다<br>
+                                    내 잘못된 선택으로 포맷이 되다니..<br>
+                                    돌다리도 두드려보고 건너라는말을 들었다<Br>
+                                    <br>
+                                    항상 조심하며 살아야겠다<br>
+                                    깨닳음이 많았던 하루 그래도 기분은 좋다
+                                </div>
+                            </div>
+                            <div class="memo1">
+                                <div class="memotop">2022.02.16 수 20:27</div>
+                                <div class="memobottom">오늘은 내 생일이었다<br>
+                                    내가 좋아하는 사람과 함께 할수있어서 <br>
+                                    정말 좋았다<Br>
+                                    <br>
+                                    내 인생 최고의 하루였다 <br>
+
+                                </div>
+                            </div>
+                            <div class="button-box">
+                                <button class="diary-button" onclick="getTextFile()">
+                                <i class="fa-solid fa-lock"></i> 짤랑이의 비밀일기 보기</button>
+                            </div>
+                            <div class="diary-box" id="secret-box">
+                                <div class="memo1">
+                                <div class="memotop">짤랑이의 비밀 일기</div>
+                                <div class="memobottom" id="secret-diary"></div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="rightbox">
@@ -89,15 +135,32 @@
                     <a href="#">
                         <div class="rightmenu">방명록</div>
                     </a>
-
-
-
                 </div>
             </div>
-
         </div>
     </div>
+   <script>
+    function getTextFile() {
+    var input = document.createElement("input");
+    input.type = "file";
+    input.accept = "text/plain";
+    input.onchange = function (event) {
+      processFile(event.target.files[0]);
+    };
+    input.click();
+  }
 
+  function processFile(file) {
+    var reader = new FileReader();
+    reader.readAsText(file, "utf-8");
+
+    reader.onload = function () {
+      document.getElementById("secret-diary").innerText = reader.result;
+      document.getElementById("secret-box").style.display = "block";
+    };
+  }
+   </script>
+    
 </body>
 
 </html>
