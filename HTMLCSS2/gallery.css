@@ -1,0 +1,43 @@
+.container {
+    width: 96%;
+    height: 500px;
+    overflow: auto;
+    padding: 10px;
+}
+
+.top {
+    background-color: #ccc;
+    height: 20px;
+    padding: 7px 20px;
+    margin: 0 0 20px;
+    font-family: 'KyoboHandwriting2020A';
+    font-weight: bold;
+
+}
+
+.content {
+    width: 470px;
+    height: 450px;
+    background: url(https://yt3.ggpht.com/Wxzsk4tPTWbCFk2THNm9sSi9oI5jwu6O728OwUAhjbfU1zNrGg1W0jPqekQgtYU0VLZn_giB=s900-c-k-c0x00ffffff-no-rj);
+    background-size: cover;
+    margin: auto;
+}
+.content1 {
+    background: url(https://mblogthumb-phinf.pstatic.net/MjAxNzA1MjNfNjAg/MDAxNDk1NTE1MTg5ODc4.f4zidWk3rHazZObqn0Nqxl_Daka90A1MnY59eYuB7ykg.m_D2BfI6FiGRR8DM132F0Sh6l1m3wML8EI9KVTL0Aukg.PNG.kar7793/2017-05-23_13%3B47%3B41.PNG?type=w800)center;
+    width: 470px;
+    height: 450px;
+    background-size: cover;
+    margin: auto;
+}
+.content2{
+    width: 470px;
+    height: 450px;
+    background: url(https://ac2-p.namu.la/20210325/034cecbc9ab5d4f2054204a0702d938b2e4bc2fcf31fe8da21d64194d610fca8.jpg?type=orig)center;
+    background-size: cover;
+    margin: auto;
+}
+.memo{
+    height: 100px;
+    padding: 15px;
+    font-family: 'KyoboHandwriting2020A';
+}

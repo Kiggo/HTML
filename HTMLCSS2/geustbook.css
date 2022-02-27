@@ -1,0 +1,68 @@
+.guestbook-image {
+    flex: 0 0 8rem;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.background-1 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR9-slBa9X4l4kf--V_1yy_ym1zTr_NzyqlQ&usqp=CAU");
+}
+
+.background-2 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIXk-XlgHTyypZAHoQ6-2h6Dh0U49Bf4HDZA&usqp=CAU");
+}
+
+.background-3 {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEAuAramliW6MpZ3OB5SErfcsJpgQGN_qyiQ&usqp=CAU");
+}
+
+.guestbook-image>img {
+    width: 100%;
+}
+
+.container {
+    height: 500px;
+    margin: 15px;
+    overflow: auto;
+
+}
+
+.memo {
+    height: 230px;
+}
+
+.memotop {
+    background-color: #e7e7e7;
+    font-family: 'NeoDunggeunmo';
+    font-size: 16px;
+    padding: 10px 15px;
+
+}
+
+.memo-img {
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 20px 0;
+}
+
+.memo-text {
+    height: 100px;
+    display: flex;
+    margin: 20px;
+    padding: 15px;
+    font-family: 'KyoboHandwriting2020A';
+    font-size: 16px;
+
+}
+
+span {
+    color: blue;
+}
+
+.fa-solid {
+    font-size: 14px;
+}

@@ -1,5 +1,5 @@
 body {
-    background-image: url('pattern.png');
+    background-image: url('https://s3.ap-northeast-2.amazonaws.com/images.codemate.kr/images/COMU/post/1640226266670/pattern.png');
     background-color: #a3a3a3;
     background-size: 100px;
     position: fixed;
@@ -43,4 +43,137 @@ body {
 
 
 
+}
+
+.leftbox {
+    flex: 0.4;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 15px 25px 25px;
+    text-align: center;
+
+}
+
+.leftbox1 {
+    flex: 0.1;
+    background-color: #eeeeee;
+    font-size: 16px;
+    line-height: 2;
+    font-family: 'NeoDunggeunmo';
+}
+
+.leftbox2 {
+    flex: 1.5;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background: #fff;
+    flex-direction: column;
+    display: flex;
+}
+
+.leftbox2_1 {
+    flex: 0.7;
+    margin-top: 20px;
+}
+
+.leftbox2_2 {
+    flex: 1;
+    font-family: 'KyoboHandwriting2020A';
+    font-size: 18px;
+}
+
+.centerbox {
+    flex: 1;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+.centerbox1 {
+    flex: 0.1;
+    display: flex;
+    background-color: #eeeeee;
+}
+
+.centerbox2 {
+    flex: 1;
+    font-family: 'KyoboHandwriting2020A';
+}
+
+.centerbox3 {
+    flex: 1;
+    font-family: 'KyoboHandwriting2020A';
+    text-align: right;
+}
+
+.centerbox4 {
+    flex: 1.5;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.rightbox {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 300px;
+    margin-top: 70px;
+}
+
+
+
+.profile {
+    width: 170px;
+    height: 170px;
+    margin: 10px auto;
+    background: rgb(214, 234, 241);
+
+}
+
+.profile img {
+    max-width: 100%;
+}
+
+.rightmenu {
+    background-color: #3b87ab;
+    border-radius: 0 8px 8px 0;
+    padding: 12px 8px;
+    border: 1px solid gray;
+    border-left: 0;
+    width: 70px;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-family: 'KyoboHandwriting2020A';
+    transition: .5s;
+}
+
+.rightmenu:hover {
+    background-color: #617dc1;
+
+}
+
+.rightbox a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.sel_wr {
+    padding-bottom: 30px
+}
+
+.sel_wr p {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+
+.red {
+    color: red;
 }

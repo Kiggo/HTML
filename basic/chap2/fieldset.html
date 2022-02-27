@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>상품 주문하기</h1>
+    <form>
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요.</b></p>
+            <form>
+                <ul>
+                    <li><label><input type="checkbox" value="s_3">선물용 3kg </label><input type="number">개</li>
+                    <li><label><input type="checkbox" value="s_5">선물용 5kg </label><input type="number">개</li>
+                    <li><label><input type="checkbox" value="f_3">가정용 3kg </label><input type="number">개</li>
+                    <li><label><input type="checkbox" value="f_5">가정용 5kg </label><input type="number">개</li>
+                </ul>
+            </form>
+            <p><b>포장선택</b></p>
+            <form>
+                <ul>
+                    <li><label><input type="radio" value="yes" name="gift">선물 포장</label></li>
+                    <li><label><input type="radio" value="no" name="gift">선물 포장 안 함</label></li>
+                </ul>
+            </form>
+
+        </fieldset>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li><label for="user-name">이름<input type="text" id="user-name" autofocus required></label></li>
+                <li><label for="user-addr">배송주소<input type="text" id="user-addr" required></label></li>
+                <li><label for="mail">메일주소<input type="email" id="mail"></label></li>
+                <li><label for="phone">연락처<input type="tel" id="phone" placeholder="하이픈을 빼고 입력하세요" required></label>
+                </li>
+                <li><label for="memo">메모<textarea cols="50" rows="5" id="memo"></textarea></label></li>
+
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요(select option)</b></p>
+            <select>
+                <option value="s_3">선물용3kg</option>
+                <option value="s_5">선물용5kg</option>
+                <option value="f_3">가정용3kg</option>
+                <option value="f_5">가정용5kg</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>상품선택</legend>
+            <p><b>주문할 상품을 선택해 주세요(datalist)</b></p>
+            <label><input type="text" list="goods"></label>
+            <datalist id="goods">
+                <option value="선물용3kg">
+                <option value="선물용5kg">
+                <option value="가정용3kg">
+                <option value="가정용5kg">
+            </datalist>
+        </fieldset>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+    </form>
+</body>
+
+</html>

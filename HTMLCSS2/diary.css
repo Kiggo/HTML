@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .today {
     border: 1px solid #ccc;
     height: 40px;
@@ -99,4 +100,107 @@
     font-family: 'NeoDunggeunmo';
     color: #96b5c7;
     font-size: 0.9em;
+=======
+.today {
+    border: 1px solid #ccc;
+    height: 40px;
+    width: 480px;
+    padding: 10px;
+    margin: 16px 0 0 16px;
+    display: flex;
+    font-family: 'NeoDunggeunmo';
+    text-align: center;
+
+}
+
+.lefttop {
+    flex: 0.2;
+    color: #6d9dce;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.righttop {
+    flex: 1;
+    color: #ccc;
+    line-height: 20px;
+    flex-wrap: wrap;
+    display: inline-flex;
+
+}
+
+.item {
+    width: 25px;
+    align-items: center;
+
+
+}
+
+.sat {
+    color: blue;
+}
+
+.sun {
+    color: red;
+}
+
+.memo {
+    width: 500px;
+    height: 380px;
+    margin: 16px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.memo1{
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.memotop {
+    padding: 25px;
+    flex: 0.15;
+    font-family: 'NeoDunggeunmo';
+    color: #96b5c7;
+    font-size: 0.9em;
+}
+
+.memobottom {
+    flex: 1;
+    text-align: center;
+    line-height: 30px;
+    padding: 10px;
+    font-family: 'KyoboHandwriting2020A';
+}
+
+.button-box{
+    text-align: center;
+}
+
+.diary-button{
+    background-color: #fff;
+    width: 180px;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    transition: .5s;
+      
+}
+.diary-button:hover {
+    background-color: #03ab8a;
+}
+
+#secret-box{
+    display: none;
+}
+
+.diary-date{
+    padding: 25px;
+    flex: 0.15;
+    font-family: 'NeoDunggeunmo';
+    color: #96b5c7;
+    font-size: 0.9em;
+>>>>>>> b6cdaa8fe8db6d09e72f4d7bf633817831a9d635
 }
