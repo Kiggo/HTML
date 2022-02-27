@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그라데이션 예제2</title>
+    <style>
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4 {
+            width: 500px;
+            height: 150px;
+            padding: 2em;
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin: 10px 5px;
+        }
+
+        .box1 {
+            background: linear-gradient(red 10%, blue 85%);
+        }
+
+        .box2 {
+            background: linear-gradient(60deg, red 0%, blue 100%);
+        }
+
+        .box3,
+        .box4 {
+            width: 243px;
+            height: 150px;
+            display: inline-block
+        }
+
+        .box3 {
+            background: radial-gradient(red, blue, black, green);
+        }
+
+        .box4 {
+            background: radial-gradient(circle, red, blue, black, green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <h1>Gradient Box 1</h1>
+    </div>
+    <div class="box2">
+        <h1>Gradient Box 2</h1>
+    </div>
+    <div class="box3">
+        <h1>Gradient Box 3</h1>
+    </div>
+    <div class="box4">
+        <h1>Gradient Box 4</h1>
+    </div>
+</body>
+
+</html>

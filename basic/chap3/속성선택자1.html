@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성선택자1</title>
+    <style>
+        section {
+            margin: 20px 0;
+        }
+
+        section[id$='2'] {
+            background-color: #fedd31;
+            padding: 10px;
+        }
+
+        div[class] {
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+        }
+        div[class^='l']{
+            background-color: skyblue;
+        }
+        div[class*='i']{
+            background-color: pink;
+        }
+        div[class$='4']{
+            background-color: black;
+            color: white;
+        }
+        div[class*='e'][class$='2']{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section id="part1">
+        <div class="lst1">속성선택자 1</div>
+        <div class="lis2">속성선택자 2</div>
+        <div class="le2">속성선택자 3</div>
+        <div class="l4">속성선택자 4</div>
+    </section>
+    <section id="part2">
+        <div class="lst1">속성선택자 1</div>
+        <div class="lis2">속성선택자 2</div>
+        <div class="le2">속성선택자 3</div>
+        <div class="l4">속성선택자 4</div>
+    </section>
+</body>
+
+</html>
