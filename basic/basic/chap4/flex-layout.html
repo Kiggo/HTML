@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header,
+        article,
+        aside,
+        footer {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        header,
+        footer {
+            height: 70px;
+        }
+
+        /* aside{
+            flex: none;
+            width: 200px;
+        } */
+        aside.leftbar {
+            flex: none;
+            width: 150px;
+
+        }
+        aside.rightbar {
+            flex: none;
+            width: 150px;
+        }
+
+        article {
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header> 헤더부분 </header>
+    <div class="container">
+        <aside class="leftbar">사이드 바</aside>
+        <article>
+            <h2>본문부분</h2>
+            <p>신체장애자 및 질병·노령 기타의 사유로 생활능력이 없는 국민은 법률이 정하는 바에 의하여 국가의 보호를 받는다. 국군은 국가의 안전보장과 국토방위의 신성한 의무를 수행함을 사명으로 하며,
+                그 정치적
+                중립성은 준수된다.
+            </p>
+            <p>이 헌법에 의한 최초의 대통령의 임기는 이 헌법시행일로부터 개시한다. 헌법재판소의 장은 국회의 동의를 얻어 재판관중에서 대통령이 임명한다. 통신·방송의 시설기준과 신문의 기능을 보장하기
+                위하여 필요한
+                사항은 법률로 정한다.</p>
+        </article>
+        <aside class="rightbar">사이드 바</aside>
+    </div>
+    <footer>푸터부분</footer>
+
+
+
+</body>
+
+</html>

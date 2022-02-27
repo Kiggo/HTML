@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .move{
+            transform: translate(220px, 200px);
+        }
+        .rotate{
+            transform: rotate(175deg);
+        }
+        .box1{
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: linear .5s;
+        }
+        .rotate1{
+            transform: rotate(45deg);
+            transform-origin: 50% 50%;
+        }
+        .rotate2{
+            transform: rotate(45deg);
+            transform-origin: 0 0;
+        }
+        .rotate3{
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스 1</div>
+    <button class="mbtn">움직여라</button>
+    <button class="mbtn1">돌려라 origin 50% 50%</button>
+    <button class="mbtn2">돌려라 origin 0 0 </button>
+    <button class="mbtn3">돌려라 origin 100% 100%</button>
+    <button class="rbtn">제자리로!</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        /* $(선택자).속성메소드*/
+        $("button.mbtn").on("click",function(){
+            $(".box1").addClass("move");
+        });
+        $("button.mbtn1").on("click",function(){
+            $(".box1").addClass("rotate1");
+        });
+        $("button.mbtn2").on("click",function(){
+            $(".box1").addClass("rotate2");
+        });
+        $("button.mbtn3").on("click",function(){
+            $(".box1").addClass("rotate3");
+        });
+        $("button.rbtn").on("click",function(){
+            $(".box1").removeClass("move rotate1 rotate2 rotate3");
+        });
+    </script>
+</body>
+</html>
