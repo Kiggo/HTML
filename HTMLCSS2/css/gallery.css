@@ -1,20 +1,26 @@
 .container {
     width: 96%;
-    height: 500px;
+    height: 480px;
     overflow: auto;
-    padding: 5px;
-}
-.container1{
-    padding-top:  5px;
+    position: relative;
+    top: 15px;
+    left: 7px;
+
 }
 
+
 .top {
-    background-color: #ccc;
-    height: 20px;
+    background-color: #e7e7e7;
+    height: 22px;
     padding: 7px 20px;
     margin: 0 0 20px;
     font-family: 'KyoboHandwriting2020A';
     font-weight: bold;
+    width: 90%;
+    position: relative;
+    left: 10px;
+    line-height: 25px;
+    
 
 }
 

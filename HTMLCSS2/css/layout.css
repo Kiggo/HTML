@@ -94,17 +94,22 @@ body {
     flex: 0.1;
     display: flex;
     background-color: #eeeeee;
+    
 }
 
 .centerbox2 {
     flex: 1;
     font-family: 'KyoboHandwriting2020A';
+    padding-top: 5px;
+  
 }
 
 .centerbox3 {
     flex: 1;
     font-family: 'KyoboHandwriting2020A';
     text-align: right;
+    padding-top: 5px;
+  
 }
 
 .centerbox4 {
