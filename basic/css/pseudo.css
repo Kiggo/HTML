@@ -1,0 +1,67 @@
+h1{
+    font-size: 2.5rem;
+    color: #25a9bd;
+}
+
+section {
+    padding: 10px;
+}
+
+section:first-of-type {
+    color: #bc1212;
+}
+
+section:last-of-type:first-letter {
+    font-size: 2.4rem;
+    float: left;
+    padding: 0 2px;
+    margin: -1px 3px 0 0;
+    font-weight: bold;
+    color: #f00;
+}
+
+section em {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+section em::before {
+    content: "\f10d";
+    padding-right: 0.5em;
+}
+
+section em::after {
+    content: "\f10e";
+    padding-left: 0.5em;
+}
+
+form label {
+    width: 60px;
+    display: inline-block;
+}
+
+form input {
+    height: 1.8em;
+    border: 1px solid #ccc;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+input:enabled{
+    background-color: #f0f0f0;
+}
+
+input:focus{
+    background-color: #cee;
+    border-color: red;
+}
+
+input:disabled{
+    background-color: #c9c9c9;
+}
