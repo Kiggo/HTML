@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 20px;
+}
+
+li label {
+	width: 120px;
+	float: left;
+	text-align: right;
+}
+
+fieldset {
+	margin: 15px;
+}
+
+form legend {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+form label.reg {
+	font-size: 14px;
+	color: blue;
+}
+
+.subm {
+	display: block;
+	background-color: #fff;
+	border: 1px solid #dedede;
+	cursor: pointer;
+	padding: 5px 10px 6px 7px;
+}
+
+.subm img{
+	border: 0;
+	padding: 0;
+	width: 16px;
+	height: 16px;
+}
+
+.subm:hover{
+	background-color: #e6efc2;
+	border: 1px solid #c6d880;
+	color: #529215;
+}
+</style>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>로그인 정보</legend>
+			<ul>
+				<li><label for="id">아이디</label><input type="text" id="id"></li>
+				<li><label for="pwd">비밀번호</label><input type="password"
+					id="pwd1">
+				<li><label for="pwd">비밀번호 확인</label><input type="password"
+					id="pwd2">
+			</ul>
+		</fieldset>
+
+		<fieldset>
+			<legend>개인 정보</legend>
+			<ul>
+				<li><label for="name">이름</label><input type="text" id="name"
+					required></li>
+				<li><label class="reg" for="uid">학번</label> <input type="text"
+					id="uid" placeholder="하이픈없이 입력" maxlength="8"></li>
+				<li><label for="mail">메일 주소</label><input type="email"
+					id="mail"></li>
+				<li><label class="reg" for="subj">영어회화(초급)</label> <input
+					type="text" id="subj" value="오전 9:00~11:00" readonly></li>
+				<li><label for="phone">연락처</label><input type="tel" id="phone"></li>
+				<li><label for="mail">블로그/홈페이지</label><input type="url"
+					id="homep"></li>
+			</ul>
+
+		</fieldset>
+		<input type="submit" value="가입하기">
+
+		<fieldset>
+			<legend>등록 정보</legend>
+
+
+			<ul>
+				<li><label class="reg" for="member">참여인원<small>(최대10명)</small></label>
+					<input type="number" id="member" value="1" min="0" max="10"
+					step="1"></li>
+				<li><label class="reg" for="stuffs">지원물품<small>(1인당
+							5개)</small></label> <input type="number" id="stuffs" value="1" min="0" max="50"
+					step="5"></li>
+				<li><label class="reg" for="satis">희망 단계<small>(하,중,상)
+					</small></label> <input type="range" id="satis" value="1" min="1" max="3"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>신청 과목</legend>
+			<p>이 달에 신청할 과목을 선택하세요 (1과목만 가능)</p>
+			<label><input type="radio" name="subject" value="speaking">회화</label>
+			<label><input type="radio" name="subject" value="grammar">문법</label>
+			<label><input type="radio" name="subject" value="writing">작문</label>
+		</fieldset>
+		<fieldset>
+			<legend>메일링</legend>
+			<p>메일로 받고 싶은 뉴스 주제를 선택해 주세요 (복수 선택 가능)</p>
+			<label><input type="checkbox" name="mailing1" value="news">해외
+				단신</label> <label><input type="checkbox" name="mailing2"
+				value="dialog">5분 회화</label> <label><input type="checkbox"
+				name="mailing3" value="pops">모닝팝스</label>
+		</fieldset>
+		<select id="class">
+			<optgroup label="공과대학">
+				<option value="archi">건축공학과</option>
+				<option value="mechanic">기계공학과</option>
+				<option value="indust">산업공학과</option>
+				<option value="elec">전기전자공학과</option>
+				<option value="computer" selected>컴퓨터공학과</option>
+				<option value="chemical">화학공학과</option>
+			</optgroup>
+			<optgroup label="인문대학">
+				<option value="history">사학과</option>
+				<option value="lang">어문학부</option>
+				<option value="philo">철학</option>
+			</optgroup>
+		</select> <input type="text" id="interest" list="choices">
+		<datalist id="choices">
+			<option value="grammar" label="문법"></option>
+			<option value="voca" label="어휘"></option>
+			<option value="speaking" label="회화"></option>
+			<option value="listening" label="리스닝"></option>
+			<option value="news" label="뉴스청취"></option>
+		</datalist>
+		<textarea name="text" rows="5" cols="50"></textarea>
+
+
+		<br> <input type="submit" value="제출"> <input type="reset"
+			value="다시입력"> <input type="image" id="butt"
+			src="imgs/login.jpg" alt="login"> <br>
+		<br>
+
+		<button type="submit" class="subm">
+			<img src="imgs/tick.png" alt="">전송하기
+		</button>
+	</form>
+</body>
+</html>
