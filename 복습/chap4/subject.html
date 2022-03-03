@@ -5,20 +5,29 @@
 <title>Insert title here</title>
 </head>
 <style>
-ul {
-	list-style: none;
-}
-
-.container {
+#container {
 	width: 600px;
 	margin: 0 auto;
 	padding: 20px 40px;
 	border: 2px solid black;
 }
+	
+ul {
+	list-style: none;
+}
+
+ul li {
+	padding: 5px;
+}
+
+ul.info li label {
+	float: left;
+	width: 100px;
+}
 </style>
 <body>
 
-	<div class="container">
+	<div id="container">
 		<form>
 			<h1>프런트엔드 개발자 지원서</h1>
 			HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
@@ -26,7 +35,7 @@ ul {
 			<hr>
 
 			<h4>개인정보</h4>
-			<ul>
+			<ul class="info">
 				<li><label for="sname">이름</label> <input type="text" id="sname"
 					autofocus placeholder="공백없이 입력하세요">
 				<li><label for="snumber">연락처</label> <input type="tel"
