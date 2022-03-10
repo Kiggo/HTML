@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+var sum = 0;
+//var totalNumber=3;
+    var totalNumber=Number(prompt("숫자의갯수 입력"));
+	for(var i=1;i<=totalNumber;i++){
+		var value = prompt(i +'번 입력 : ');
+		//sum = sum + Number(value); 	
+		sum+=Number(value);
+	}
+	var avg = sum/totalNumber;
+	alert('합계 : ' + sum);
+	alert('평균 : ' + avg); 
+</script>
+
+</body>
+</html>
