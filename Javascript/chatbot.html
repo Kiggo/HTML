@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot</title>
     <link rel="stylesheet" href="css/chatbot.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </head>
 <body>
-    <div class="container">
-    <div class="chatbox">짤랑</div>
+    <div id="container">
+    <div id="chatbox"></div>
     <div class="img"></div>
-    <input type="text"><br>
-    <button>시키기</button>
+    <input type="text" id="console" onkeyup="if(window.event.keyCode==13){onClick()}"><br>
+    <!-- 엔터키로도 시킬수있게 구현 -->
+    <button id="btn">시키기</button>
+    <script src="js/chatbot.js"></script>
 </div>
 </body>
 </html>

@@ -1,18 +1,22 @@
-.container{
+#container{
     margin: 15px auto;
     padding: 50px;
     width: 400px;
     text-align: center;
 }
 
-.chatbox{
+#chatbox{
     border: 2px solid;
     width: 300px;
     height: 100px;
     border-radius: 5px;
     margin: auto;
-    padding: 35px;
+    padding: 15px;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* 플렉스를 이용 말풍선 텍스트 가운데 정렬하였다 */
 }
 
 .img{
@@ -29,6 +33,9 @@ input{
     border-radius: 5px;
     border: 2px solid tomato;
 }
+input:focus{
+    outline: none;
+}
 
 button{
     background-color: tomato;
@@ -38,4 +45,14 @@ button{
     border-radius: 5px;
     font-weight: bold;
     box-shadow: 5px 5px gray;
+}
+button:active{
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: none;
+}
+
+#typed{
+    padding: 10px;
 }
